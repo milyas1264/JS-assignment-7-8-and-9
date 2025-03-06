@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <style>
+        h1{
+            text-align: center;
+            color: greenyellow;
+            background-color: yellow;
+            border: 5px outset black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+         <h1>Mark Sheet</h1>
+
+    <script>
+        // 6. Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute
+// grade as per following table:
+
+let obtainedMarks = prompt("Enter obtained marks");
+        let totalMarks = prompt("Enter total marks");
+        let percentage = obtainedMarks / totalMarks * 100;
+        if (percentage >= 80) {
+            alert("A-one grade Excellent");
+            document.write("A-one grade Excellent <br>");
+        } else if (percentage >= 70) {
+            alert("A grade Good");
+            document.write("A- grade Good <br>");
+        } else if (percentage >= 60) {
+            alert("B grade You need to improve");
+            document.write("B- grade You need to improve <br>");
+        }  else if (percentage > 60) {
+            alert("Fail Sorry");
+            document.write("Fail Sorry <br>");
+        } else {            
+            alert("Fail");
+            document.write("Fail <br>");
+        }
+        document.write("<h1>Mark Sheet</h1> <br>Total Marks = 300: <br> Marks Obtained : 219 <br> Grade : B <br> Percentage :70% <br> Remarks : You need to improve " );
+
+
+    </script>
+</body>
+</html>

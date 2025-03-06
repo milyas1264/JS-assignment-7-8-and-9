@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+            background-color: aqua;
+            border: 5px outset black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess game ,divisible by 3, even or odd</h1>
+    <script>
+        //         7. Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+
+let secretNumber = 5;
+        let userNumber = prompt("Enter number");
+        if (userNumber == secretNumber) {
+            alert("Bingo! Correct answer");
+            document.write("Bingo! Correct answer <br>");
+        } else if (userNumber + 1 == secretNumber) {
+            alert("Close enough to the correct answer");
+            document.write("Close enough to the correct answer <br>");
+        }
+
+//         8. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+
+        let number = prompt("Enter number");
+        if (number % 3 == 0) {
+            alert("Number is divisible by 3");
+            document.write("Number is divisible by 3 <br>");
+        }else{
+            alert("Number is not divisible by 3");
+            document.write("Number is not divisible by 3 <br>");
+        }
+
+//         9. Write a program that checks whether the given input is an
+// even number or an odd number.
+
+        let input = prompt("Enter number");
+        if (input % 2 == 0) {
+            alert("Number is even");
+            document.write("Number is even <br>");
+        }else{
+            alert("Number is odd"); 
+            document.write("Number is odd <br>");
+        }
+    </script>
+</body>
+</html>
