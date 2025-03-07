@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blueviolet;
+            background-color: papayawhip;
+            border: 5px inset gray;
+            border-radius: 10px;
+
+        }
+        h2{display: inline;}
+    </style>
+</head>
+<body>
+    <h1>Array ofColors</h1>
+    <button><a href="../index.html">Back to Home</a></button>
+
+    <script>
+        // 8. Write a program to store 3 student names in an array.Take
+// another array to store score of these three students.
+// Assume that total marks are 500 for each student, display
+// the scores & percentages of students like:
+let studentName = ["Ali", "Baber", "Kashif"]
+let studentScore = ["Score of Ali is 320. Percentage:64%", "Score of Baber is 230. Percentage:46%", "Score of Kashif is 480. Percentage:96%"];
+console.log(studentName, studentScore);
+// 9. Initialize an array with color names. Display the array
+// elements in your browser.
+let colors = ["red", "green", "blue","orange", "purple"];
+console.log(colors);
+// a. Ask the user what color he/she wants to add to the
+// beginning & add that color to the beginning of the array.
+// Display the updated array in your browser.
+let color = prompt("what color you want to add at the begining");
+colors.unshift("green");
+colors.shift("lemon");
+console.log(color);
+// b. Ask the user what color he/she wants to add to the end
+// & add that color to the end of the array. Display the
+// updated array in your browser.
+let color1 = prompt("what color you want to add at the end");
+colors.push("yellow");
+console.log(color1);
+// c. Add two more color to the beginning of the array. Display
+// the updated array in your browser.
+let color2 = prompt("what color you want to add at the begining");
+colors.unshift("green");
+console.log(color2);
+// d. Delete the first color in the array. Display the updated
+// array in your browser.
+let color3 = prompt("what color you want to delete at the begining");
+colors.shift("lemon");  
+console.log(color3);
+// e. Delete the last color in the array. Display the updated
+// array in your browser.
+let color4 = prompt("what color you want to delete at the end");
+colors.pop();
+console.log(color4);
+// f. Ask the user at which index he/she wants to add a color &                 
+// color name. Then add the color to desired position/index. Display
+// the updated array in your browser.
+let color5 = prompt("what color you want to add at the position");
+colors.splice(2,0,"Bergandy");
+console.log(color5);
+// g. Ask the user at which index he/she wants to delete
+// color(s) & how many colors he/she wants to delete. Then
+// remove the same number of color(s) from user-defined
+// position/index. . Display the updated array in your
+// browser.
+let color6 = prompt("what color you want to delete at the position");
+colors.splice(2,1,"Bergandy");
+console.log(color6);
+
+// 10. Write a program to store student scores in an array &
+// sort the array in ascending order using Array’s sort
+// method.
+let studentScore1 = [320, 480, 230, 120];
+studentScore1.sort();
+console.log(studentScore1);
+
+// 11. Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+let selectedCities = cities.slice(2, 4);
+console.log(selectedCities);
+
+// 12. Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+var arr = ["This", "is", "my", "cat"]
+let string = arr.join(" ");
+console.log(string);
+
+// 13. Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+let array = [];
+array.push("Ali");
+array.push("Baber");
+array.push("Kashif");
+console.log(array);
+    </script>
+</body>
+</html>
